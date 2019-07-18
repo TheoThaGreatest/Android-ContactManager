@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="utd.com.contactmanager.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/newContactAction"
+        android:icon="@drawable/addcontact"
+        android:title="Add Contact"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/importConatcts"
+        android:icon="@drawable/import_image"
+        android:title="Import"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/clearContactList"
+        android:icon="@drawable/clear_image"
+        android:title="Clear"
+        app:showAsAction="ifRoom" />
+</menu>

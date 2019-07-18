@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="403dp"
+        android:layout_height="570dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        tools:context=".DisplayMapsActivity"
+        tools:layout_editor_absoluteY="-5dp" />
+
+    <LinearLayout
+        android:id="@+id/displayPart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-581dp">
+
+        <TextView
+            android:id="@+id/LongitudeView"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="712dp"
+            android:text="Longitude: "
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/LatitudeView"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LongitudeView"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="128dp"
+            android:text="Latitude: "
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/distanceView"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LatitudeView"
+            android:layout_weight="1"
+            android:text="Distance: "
+            android:textSize="@dimen/textSize" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
